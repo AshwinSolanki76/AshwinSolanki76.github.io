@@ -1,0 +1,30 @@
+.card{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 2em;
+    font-family: Ubuntu;
+    border-radius:25px;
+    color:white;
+    line-height:25px;
+    box-shadow:5px 5px 10px #ccc;
+    float: left;
+    margin-right: 1em;
+}
+
+.card.purple{
+    background:linear-gradient(150deg,#f731db,#4600f1 100%);
+}
+
+button{
+    text-transform: uppercase;
+    width: 150px;
+    display:block;
+    margin: 0 auto;
+    colour:#4600f1;
+    border-radius:50px;
+    padding:1em;
+    background:white;
+    border: none;
+    font-weight:bold;
+    margin-top: 4em;
+}
