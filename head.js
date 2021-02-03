@@ -23,7 +23,7 @@ function MakeCard(Count,Title,Discription,Url,Footer){
     }
     else{
         var IMAGE=document.createElement('img');
-        IMAGE.src="AllPreview/"+Title+".jpeg";
+        IMAGE.src="https://github.com/AshwinSolanki76/AshwinSolanki76.github.io/blob/master/AllPreview/"+Title+".jpeg?raw=true";
         // https://github.com/AshwinSolanki76/AshwinSolanki76.github.io/blob/master/AllPreview/AshwinSolanki76.github.io.jpeg?raw=true
         IMAGE.className="IMAGE";
     }
