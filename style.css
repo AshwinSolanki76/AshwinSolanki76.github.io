@@ -1,207 +1,150 @@
-/* .card{
-    width: 300px;
-    box-sizing: border-box;
-    padding: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius:25px;
-    color:white;
-    line-height:25px;
-    box-shadow:5px 5px 10px #ccc;
+.someCoolColours{
+    color: 
+    #05192D
+    #0d1d2e
+    #FF6EA9
+    #06BDFC
+    #03EF62
+    #FF931E
+    #65FF8F
+
+    #05192D
+    #505E6C
+    #7933FF
+    #100E17;
+}
+
+body{
+    margin-left:0px;
+    width:100%;
+    background-color: #100e17;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Name{
+    margin-left:20px;
+    margin-top:15px;
     float: left;
-    margin-right: 1em;
-    background:linear-gradient(150deg,#f731db,#4600f1 100%);
+    color:white;
 }
-
-.img{
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    height: 8em;
+.Dot{
+    margin-left:5px;
+    margin-top:15px;
+    float: left;
+    color:#03EF62;
 }
-
-button{
-    text-transform: uppercase;
-    width: 150px;
-    display:block;
-    margin: 0 auto;
-    colour:#4600f1;
-    border-radius:50px;
-    padding:1em;
-    background:white;
-    border: none;
-    font-weight:bold;
-    margin-top: 4em;
-} */
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 10;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-}
-
-.social{
-    height: 30px;
-}
-
-.img{
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    height: 8em;
-}
-/* 
-h1{
-    padding-left: 400px;
-    z-index: 1;
-} */
-
-body
-{
-    display:flex;
-    justify-content: center;
-    /* padding-left:120px ;
-    padding-top:150px; */
-    align-items: center;
-    min-height: 100vh;
-    background: #161623;
-}
-
-body::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left:0;
-    width:100%;
-    height: 100%;
-    background:linear-gradient(#f00,#f0f);
-    clip-path: circle(50% at right 70%);
-}
-
-body::after
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left:0;
-    width:100%;
-    height: 100%;
-    background:linear-gradient(#2196f3,#e91e63);
-    clip-path: circle(30% at 10% 10%);
-}
-
-.container
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    max-width: 1200px;
-    flex-wrap:wrap;
-    z-index: 1;
-}
-
-.container .card
-{
-    position: relative;
-    width:280px;
-    height:400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background:rgba(255, 255, 255,0.1);
+.NavBar{
     overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-top:1px solid rgba(255, 255, 255,0.5);
-    border-left:1px solid rgba(255, 255, 255,0.5);
-    backdrop-filter: blur(5px);
-}
-
-.container .card .content
-{
-    padding: 20px;
-    text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
-    transition:0.5s ;
-}
-
-.container .card:hover .content
-{
-    transform:translateY(0px);
-    opacity:1;
-}
-
-.container .card .content h2
-{
-    position: absolute;
-    top: -40px;
-    right: 30px;
-    font-size: 8em;
-    color:rgba(255,255,255,0.05);
-    
-}
-.container .card .content h3
-{
-    font-size: 1.8em;
-    color:#fff;
+    height:70px;
+    background-color: #100E17;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow:0px 1px 30px black;
     z-index: 1;
 }
 
-.container .card .content p 
-{
-    font-size:1em;
-    color:#fff;
-    font-weight: 300;
-}
-
-.container .card .content a
-{
+.Container{
+    top: 80px;
     position: relative;
-    display: inline-block;
-    padding:8px 20px;
-    margin-top: 15px; 
-    background: #fff;
-    color:#000;
-    border-radius:20px;
-    text-decoration: none;
-    font-weight:500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* GLOBAL STYLES */
-/* body {
-    background: #333;
-    padding-top: 5em;
     display: flex;
     justify-content: center;
-  } */
-  
-  /* DEMO-SPECIFIC STYLES */
-  .typewriter h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-  }
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Card{
+    margin:30px;
+    height:400px;
+    height:fit-content;
+    width: 280px;
+    /* width: 10px; */
+    /* width:fit-content; */
+    /* min-width: 500px; */
+    padding:10px;
+    background-color: #100E17;
+    border-radius: 20px ;
+    box-shadow: -1rem 5px 5rem rgba(0, 0, 0, 0.719);
+
+    transition: 0.4s ease-out;
+    
+    position: relative;
+    /* align-self: center; */
+    /* text-align:center; */
+}
+.Card:hover {
+    transform: translateY(-20px);
+    transition: 0.3s ease-out;
+    box-shadow: -1rem 5px 10rem rgba(0, 0, 0, 0.719);
+    background-color: #1b162c;
+}
+
+.Title{
+    position:relative;
+    overflow:hidden;
+    font-size:25px;
+    color:white;
+    margin: 10px;
+    /* z-index: 1; */
+    /* size: fit-content; */
+}
+.CardCount{
+    z-index: -1;
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    top:-45px;
+    right:10px;
+    padding:0px;
+    font-size: 150px;
+    color:#65ff8e0e;
+}
+
+.Discription{
+    position: relative;
+    float: bottom;
+    margin:20px;
+    margin-left:5px;
+    margin-right:10px;
+    font-size:20px;
+    color: #505E6C;
+    text-align:center;
+
+}
+
+.ConnectIcons{
+    height: 50px;
+}
+.IMAGE{
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: -1rem 5px 5rem rgba(0, 0, 0, 0.719);
+    z-index: 2;
+}
+
+.URL{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    align-self: center;
+}
+
+/* .UrlDiv{
+    width: 50%;
+    margin: 0 auto;
+} */
+
+.UrlDiv{
+    display: table;
+    margin: 0 auto;
+}
+.Footer{
+    position: relative;
+    margin: 15px;
+    text-align:center;
+    color: #505E6C;
+}
