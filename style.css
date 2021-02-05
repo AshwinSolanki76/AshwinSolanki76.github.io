@@ -17,7 +17,7 @@
 body{
     margin-left:0px;
     width:100%;
-    background-color: #100e17;
+    background-color: #0a090f;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -65,7 +65,7 @@ body{
     /* width:fit-content; */
     /* min-width: 500px; */
     padding:10px;
-    background-color: #100E17;
+    background-color: #110e1b;
     border-radius: 20px ;
     box-shadow: -1rem 5px 5rem rgba(0, 0, 0, 0.719);
 
@@ -91,17 +91,6 @@ body{
     /* z-index: 1; */
     /* size: fit-content; */
 }
-.CardCount{
-    z-index: -1;
-    font-weight: bold;
-    position: absolute;
-    display: inline-block;
-    top:-45px;
-    right:10px;
-    padding:0px;
-    font-size: 150px;
-    color:#65ff8e0e;
-}
 
 .Discription{
     position: relative;
@@ -118,8 +107,14 @@ body{
 .ConnectIcons{
     height: 50px;
 }
+#connect{
+    align-items: center;
+}
+
+
 .IMAGE{
     width: 280px;
+    align-self: center;
     border-radius: 20px;
     box-shadow: -1rem 5px 5rem rgba(0, 0, 0, 0.719);
     z-index: 2;

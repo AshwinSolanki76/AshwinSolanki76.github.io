@@ -1,18 +1,9 @@
-function MakeCard(Count,Title,Discription,Url,Footer){
+function MakeCard(Title,Discription,Url,Footer){
     var card=document.createElement('div');
     card.className="Card";
     var title=document.createElement('div');
     title.className="Title";
     title.innerText=Title;
-    var cardcount=document.createElement('div');
-    cardcount.className="CardCount";
-    if(Count<=9){
-        cardcount.innerHTML="0"+Count.toString();
-    }
-    else{
-        cardcount.innerHTML=Count;
-    }
-    
 
     var discription=document.createElement('div');
     discription.className="Discription";
@@ -44,7 +35,6 @@ function MakeCard(Count,Title,Discription,Url,Footer){
     footer.innerHTML=Footer;
 
     card.appendChild(title);
-    card.appendChild(cardcount);
     if(Title=="COMPARE-gIT"){
         console.log(Title);
     }
@@ -67,19 +57,23 @@ async function getData(Username){
     var container=document.createElement('div');
     var count=1;
     for(var i=0;i<data.length;i++){
+        var footer="Made with ❤️"
+        if(data[i]['language']!=null){
+            footer+=" and "+data[i]['language'];
+        }
         if(data[i]['fork']==false)
         {
-            c1=MakeCard(count,
-                        data[i]['name'],
+            c1=MakeCard(data[i]['name'],
                         data[i]['description'],
                         data[i]['html_url'],
-                        "Made with 💖 and "+ data[i]['language']);
+                        footer);
             document.getElementById('Container').appendChild(c1);
             count++;
         }
     }
     var card=document.createElement('div');
     card.className="Card";
+    card.id="connect";
     var Instagram=document.createElement("a");
     Instagram.href="https://www.instagram.com/aswinsolanki/";
     Instagram.target="_blank";
