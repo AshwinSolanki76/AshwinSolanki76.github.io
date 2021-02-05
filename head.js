@@ -9,7 +9,7 @@ function MakeCard(Title,Discription,Url,Footer){
     discription.className="Discription";
     discription.innerText=Discription;
 
-    if(Title=="COMPARE-gIT"){
+    if(Title=="COMPARE-gIT" || Title=="GRIP-TSF"){
         console.log(Title);
     }
     else{
@@ -35,7 +35,7 @@ function MakeCard(Title,Discription,Url,Footer){
     footer.innerHTML=Footer;
 
     card.appendChild(title);
-    if(Title=="COMPARE-gIT"){
+    if(Title=="COMPARE-gIT" || Title=="GRIP-TSF"){
         console.log(Title);
     }
     else{
